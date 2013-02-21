@@ -8,9 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.crystalfirge.dao.interfaces.UserDao;
+import com.crystalforge.dao.interfaces.UserDao;
+import com.crystalforge.model.User;
 
-import pl.com.piotrjames.model.User;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration({ "/app-config.xml" })

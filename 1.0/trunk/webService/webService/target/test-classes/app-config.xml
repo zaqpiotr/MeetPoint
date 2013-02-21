@@ -20,6 +20,6 @@
 		</property>
 	</bean>
 
-	<bean id="userDao" class="pl.com.piotrjames.model.UserDaoImpl" />
-
+	<bean id="userDao" class="com.crystalforge.dao.implementations.UserDaoImpl" />
+	
 </beans>
