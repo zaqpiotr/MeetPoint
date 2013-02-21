@@ -1,4 +1,4 @@
-package pl.com.piotrjames.model;
+package com.crystalfirge.dao.implementations;
 
 import java.util.List;
 
@@ -7,6 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate3.HibernateTemplate;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
+
+import pl.com.piotrjames.model.User;
+
+import com.crystalfirge.dao.interfaces.UserDao;
 
 @Transactional
 @Repository("userDao")
