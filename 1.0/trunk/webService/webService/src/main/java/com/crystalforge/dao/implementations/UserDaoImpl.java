@@ -12,8 +12,8 @@ import org.springframework.transaction.annotation.Transactional;
 import com.crystalforge.dao.interfaces.UserDao;
 import com.crystalforge.model.User;
 
-@Transactional
-@Repository("userDao")
+//@Transactional
+@Repository
 public class UserDaoImpl implements UserDao {
 	
 	private HibernateTemplate hibernateTemplate;
@@ -23,12 +23,10 @@ public class UserDaoImpl implements UserDao {
 		hibernateTemplate = new HibernateTemplate(sessionFactory);
 	}
 
-	public void setHibernateTemplate(HibernateTemplate hibernateTemplate) {
-		this.hibernateTemplate = hibernateTemplate;
-	}
 
-	@Override
-	@Transactional(readOnly = false)
+
+//	@Override
+//	@Transactional(readOnly = false)
 	public void saveUser(User user) {
 		hibernateTemplate.saveOrUpdate(user);
 
